@@ -24,6 +24,9 @@ async function createUser(bot, msg) {
           "Пользователь был успешно добавлен в базу данных"
         );
       } else {
+        const adminMessage = user.isAdmin ? "Привет админ вот что ты можешь сделать" : ""
+        const adminKeyboard = user.isAdmin ? adminKeyboard : startKeyboard
+        await bot.sendMessage(msg.chat.id, adminMessage, )
         await bot.sendMessage(
           msg.chat.id,
           "Такой пользователь уже есть в базе данных"

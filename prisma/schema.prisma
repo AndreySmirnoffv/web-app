@@ -18,6 +18,6 @@ model user {
   username String
   tonBalance Int
   gameBalance Int
-  isPayed Boolean
-  isAdmin Boolean
+  isPayed Boolean @default(false)
+  isAdmin Boolean @default(false)
 }
