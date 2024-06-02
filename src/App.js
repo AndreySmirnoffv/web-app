@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import spinner from "./assets/images/spinner2.jpg"
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <img src={spinner}/>
     </div>
   );
 }

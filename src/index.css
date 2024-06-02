@@ -1,9 +1,10 @@
 html{
   display: flex;
-  flex: 1;
+  height: 100%;
+
 }
 
-.root{
+#root{
   display: flex;
   flex: 1;
 }
